@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Nexa-heavy';
+    src: url('../assets/fonts/Nexa-Heavy.ttf') format('embedded-opentype'), /* Internet Explorer */
+         url('../assets/fonts/Nexa-Heavy.ttf') format('woff2'),             /* Super Modern Browsers */
+         url('../assets/fonts/Nexa-Heavy.ttf') format('woff'),              /* Pretty Modern Browsers */
+         url('../assets/fonts/Nexa-Heavy.ttf') format('truetype'),          /* Safari, Android, iOS */
+         url('../assets/fonts/Nexa-Heavy.ttf') format('svg');
+}
+
+body{
+    background-image: url(../assets/img/Crv\ de\ nivel\ Quilpue\ background.png);
+    background-color: white;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3, h4{
+    font-family: "Nexa-heavy";
+}
+
+h1{
+    font-size: 128px;
+}
+
+p{
+    font-family: "Open Sans";
+    font-weight: regular;
+}
+
+.navbar{
+    height: 132px;
+    box-shadow: inset 0px -2px 4px 0px rgba(0,0,0,0.15), 0px 4px 10px 0px rgba(0,0,0,0.25);
+    background-image: url(../assets/img/Crv\ de\ nivel\ Quilpue\ nav.png);
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 100px 0px 100px;
+    gap: 90px;
+}
+.navtext{
+    width: 200px;
+    font-family: "Open Sans";
+    font-size: 40px;
+}
+
+.flex-inicio{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.flex-inicio-textos{
+    margin: 0px 100px 0px 100px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-inicio{
+    filter: drop-shadow(-10 0 20 rgb(0, 0, 0, 25%));
+}
