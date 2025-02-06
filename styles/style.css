@@ -31,9 +31,14 @@ h1, h2, h3, h4{
 
 h1{
     font-size: 128px;
+    line-height: 1;
 }
 
-p{
+.activeNav{
+    font-weight: 700;
+}
+
+p, button{
     font-family: "Open Sans";
     font-weight: regular;
 }
@@ -50,18 +55,20 @@ p{
     justify-content: end;
     padding: 0px 100px 0px 100px;
     gap: 90px;
+    z-index: 99;
 }
 .navtext{
     width: 200px;
     font-family: "Open Sans";
     font-size: 40px;
+    text-align: center;
 }
 
 .flex-inicio{
     display: flex;
     flex-direction: row;
-    width: 100vw;
     justify-content: space-between;
+    
 }
 
 .flex-inicio-textos{
@@ -69,8 +76,136 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 80px 0px;
 }
 
 .img-inicio{
-    filter: drop-shadow(-10 0 20 rgb(0, 0, 0, 25%));
+    filter: drop-shadow(-10px 0px 20px rgb(0, 0, 0, 25%));
+    height: 86.1vh;
+}
+
+a:hover{
+    color: #FFC526;
+}
+
+.flex-redes{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.svgRedes{
+    fill: green !important;
+    height: 48px;
+    width: 48px;
+    
+}
+
+.svgRedes:hover{
+    fill: white !important;
+}
+
+#imgIn:hover {
+    content: url('../assets/img/LinkedIn2.png');
+}
+
+#imgIg:hover {
+    content: url('../assets/img/ig2.png');
+}
+
+#imgWsp:hover {
+    content: url('../assets/img/wsp2.png');
+}
+
+#imgMail:hover {
+    content: url('../assets/img/mail2.png');
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #A6BF9B; 
+    border-radius: 10px;
+      
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #FFC526; 
+}
+
+button{
+    color: white;
+    background-color: #FFC526;
+    font-size: 24px;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 28px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: white;
+    border: 1px solid #FFC526;
+    color: #FFC526;
+    box-shadow: inset 0px 0px 8px 0px #ffc526;
+}
+
+.flexProyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+.flexRuletaProyectos{
+    min-width: 900px;
+}
+
+.ProyTitulo{
+    background-image: url(../assets/img/herumesbackground.png);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    border-radius: 0px 0px 168px 0px;
+    width: 718px;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px 0px 28px;
+    background-position: center;
+}
+
+.ProyTitulo:hover{
+    width: 900px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.0);
+    background-position: center;
+}
+
+.textPageProyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 80px 100px;
+}
+
+.curriculum{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
